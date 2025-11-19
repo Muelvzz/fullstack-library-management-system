@@ -6,6 +6,20 @@
     border-radius: 10px;
 }
 
+.signup-wrapper {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.create-container {
+    background-color: #14213D;
+    width: 50%;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
 .auth-form {
     display: flex;
     flex-direction: column;

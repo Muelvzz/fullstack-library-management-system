@@ -5,7 +5,11 @@ import Login from "../components/Login"
 import "../app.css"
 import "../components-css/footer.css"
 
-export default function Signin({ email, setEmail, password, setPassword }) {
+export default function Signin() {
+
+  const [email, setEmail] = useState("")
+  const [password, setPassword] = useState("")
+
     return (
     <>
       <div className="two-column-container" style={{marginTop: "4rem", marginBottom: "3rem"}}>
