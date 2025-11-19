@@ -1,17 +1,20 @@
 import { useState } from 'react'
 import Signin from './page/Signin'
-import Footer from './components/Footer'
 import './App.css'
 
 function App() {
 
+  const [email, setEmail] = useState("")
+  const [password, setPassword] = useState("")
+
   return (
     <>
-      <div className="two-column-container">
-        <Signin />
-      </div>
-
-      <Footer />
+      <Signin 
+        email={email}
+        setEmail={setEmail}
+        password={password}
+        setPassword={setPassword}
+      />
     </>
   )
 }

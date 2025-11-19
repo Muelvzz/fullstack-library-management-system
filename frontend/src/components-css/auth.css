@@ -1,0 +1,24 @@
+.auth-container {
+    background-color: #14213D;
+    margin: 1.5rem;
+    width: 100%;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+    row-gap: 0.75rem;
+}
+
+.auth-submit {
+    background-color: #2F73F3;
+    padding: 0.5rem;
+    border-style: none;
+    border-radius: 5px;
+    font-family: "Inter";
+    font-weight: bold;
+    margin-top: 0.5rem;
+}

@@ -3,10 +3,13 @@
     justify-content: space-between;
     height: 100%;
     width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
 }
 
-.right-column-container, .left-column-container {
+.right-column-container, .left-column-container, .bottom-container {
     width: 100%;
+    height: 100%;
 }
 
 .right-column-container {

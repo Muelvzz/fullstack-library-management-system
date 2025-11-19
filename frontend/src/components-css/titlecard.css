@@ -1,0 +1,16 @@
+.titlecard-container {
+    margin: 1rem;
+    padding: 2rem;
+}
+
+.image-container {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
+.image {
+    border-radius: 50%;
+    width: 4rem;
+}
