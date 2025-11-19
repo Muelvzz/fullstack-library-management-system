@@ -1,0 +1,16 @@
+.two-column-container {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+}
+
+.right-column-container, .left-column-container {
+    width: 100%;
+}
+
+.right-column-container {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: right;
+}

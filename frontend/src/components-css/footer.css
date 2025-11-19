@@ -1,0 +1,8 @@
+footer {
+    background-color: #14213D;
+    padding: 1.5rem;
+}
+
+.footer-title > a {
+    font-family: "Irish Grover";
+}
