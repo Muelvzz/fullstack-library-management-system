@@ -1,0 +1,26 @@
+.header-title {
+    background-color: #14213D;
+    margin: 0;
+    padding: 1.5rem;
+    width: 100%;
+}
+
+.button-list > button {
+    border-radius: 50%;
+    display: flex;
+    gap: 1rem;
+    font-size: 1.5rem;
+    padding: 0.25rem;
+    border-style: none;
+    cursor: pointer;
+}
+
+.button-list > button:hover {
+    background-color: black;
+    transition: 0.4s;
+}
+
+.button-list {
+    margin-right: 3.5rem;
+    width: 100%;
+}

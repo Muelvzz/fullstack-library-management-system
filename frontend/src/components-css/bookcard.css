@@ -1,0 +1,13 @@
+.bookcard-wrapper {
+    margin: 1.5rem;
+}
+
+.button-tabs > button {
+    border-radius: 10px;
+    color: white;
+    background-color: black;
+    padding: 10px 25px;
+    border-style: none;
+    font-family: "Inter";
+    font-weight: 500;
+}
