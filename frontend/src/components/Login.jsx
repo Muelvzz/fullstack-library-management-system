@@ -21,12 +21,7 @@ export default function Login({ email, setEmail, password, setPassword }) {
             const res = await api.post("/user/login", user)
             return res.data
         } catch (err) {
-            if (err.response) {
-                console.log(err.response.data.detail)
-            } else {
-                console.log(`Network or CORS error: ${err.message}`)
-            }
-            return null
+            alert(err.response.data.detail)
         }
     }
 
@@ -42,12 +37,9 @@ export default function Login({ email, setEmail, password, setPassword }) {
 
         if (check_user) {
             navigate("/dashboard")
-        } else {
-            alert("Invalid credentials")
+            setEmail("")
+            setPassword("")
         }
-
-        setEmail("")
-        setPassword("")
     }
 
     return (
