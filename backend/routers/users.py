@@ -4,6 +4,7 @@ from sqlalchemy.orm import Session
 from backend.database import get_db
 from backend import models
 from backend.schemas import UserCreate, UserOut
+from backend.auth import create_access_token
 
 from passlib.context import CryptContext
 
@@ -29,7 +30,12 @@ def login(user: UserCreate, db: Session = Depends(get_db)):
     if not verify_password:
         raise HTTPException(status_code=400, detail="Incorrect Password")
     
-    return existing_user
+    token = create_access_token({"sub": existing_user.email})
+
+    return {
+        "access_token": token,
+        "token_type": "bearer"
+    }
 
 
 @router.post("/create", response_model=UserOut)

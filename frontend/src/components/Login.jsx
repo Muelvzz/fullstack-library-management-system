@@ -8,12 +8,10 @@ export default function Login({ email, setEmail, password, setPassword }) {
 
     const handleEmail = (e) => {
         setEmail(e.target.value)
-        console.log(e.target.value)
     }
 
     const handlePassword = (e) => {
         setPassword(e.target.value)
-        console.log(e.target.value)
     }
 
     async function login(user) {
@@ -36,7 +34,9 @@ export default function Login({ email, setEmail, password, setPassword }) {
         const check_user = await login(user)
 
         if (check_user) {
+            localStorage.setItem("token", check_user.access_token)
             navigate("/dashboard")
+
             setEmail("")
             setPassword("")
         }
